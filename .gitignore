@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+
+# Generated each pipeline run — kept out of git so the repo always shows
+# a clean slate; delete this line if you'd rather commit sample outputs.
+outputs/*.md
+outputs/*.txt
+outputs/*.csv
+!outputs/README.md
+
+# docs/ is NOT ignored — it's the static site build_site.py produces from
+# your real outputs/, meant to be committed and published via GitHub Pages.
